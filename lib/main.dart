@@ -80,7 +80,6 @@ class ArticleViewState extends State<ArticleView>{
                     child: new Text(_articleCur.toString()),
                     color: Colors.lightBlue,
                     highlightColor: Colors.lightBlueAccent,
-                    onPressed: (){onPressed(false);},
                   ),
                   new RaisedButton(
                     child: new Text("Следующая"),
