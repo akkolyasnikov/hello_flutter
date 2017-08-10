@@ -91,16 +91,18 @@ class ArticleViewState extends State<ArticleView>{
               ),
               new Container(
                 width:250.0,
-                child: new Center(
-                  child:new Text(
-                    _articleHead,
-                    style: new TextStyle(
-                      fontWeight: FontWeight.w900,
-                    )
-                  )
+                margin: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+                child:new Text(
+                  _articleHead,
+                  style: new TextStyle(
+                    fontWeight: FontWeight.w900,
+                  ),
+                  textAlign: TextAlign.center
                 )
               ),
-              new Text(_articleContent)
+              new Text(
+                _articleContent,
+                textAlign: TextAlign.justify)
             ]
           )
         )
